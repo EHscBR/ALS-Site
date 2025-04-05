@@ -1,174 +1,354 @@
-@media screen and (max-width: 900px){
-  header .menu-desktop, header .btn-contato{
-    display: none;
-  } 
-}
-
-@media screen and (max-width: 878px){
-  /* Respioncivo da Hero */
-  .hero-site .txt-hero h1{
-    font-size: 2.6em;
-    line-height: 45px;
-   }
-   
-   .hero-site .txt-hero p{
-     font-size: 14px;
-   }
-   
-   .hero-site .txt-hero p span{
-     display: inline;
-   }
-   
-   .hero-site button{
-     font-size: 18px;
-   }
-
-   /*imagem com texto*/
-    .about-container {
-      flex-direction: column-reverse;
-      text-align: center;
+/* Responcivo da imagem inicial*/
+@media (max-width: 768px) {
+  section.hero-site {
+    padding: 0 8%;
   }
 
-  .about-image {
-      width: 80%;
+  .hero-site .interface {
+    gap: 10px; /* Menor espaço entre os elementos */
+  }
+
+  .hero-site .txt-hero h1 {
+    font-size: 2em;
+    line-height: 1.1em;
+  }
+
+  .hero-site .txt-hero p {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  .hero-site button {
+    width: 160px;
+    height: 45px;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+}
+
+/* Responcivo d imagem com texto inicial*/
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .about-image,
+  .about-text {
+    width: 100%;
   }
 
   .about-text {
-      width: 100%;
-  }
-
-/* Responcivo porque nos escolher */
-  
-  .vantagens .itens-container{
-    flex-direction: column;
-  }
-
-  .vantagens .itens-container .img-itens img{
-   width: 100%;
-  }
-
-  .vantagens .itens-container .txt-itens p{
     margin-bottom: 20px;
   }
+}
 
-  .vantagens .itens-container .txt-itens .item-1{
-    order: 1;
+/* estilo card */
+@media (max-width: 600px) {
+  .cards {
+    justify-content: center;
   }
 
-  .vantagens .itens-container .txt-itens .item-2{
-    order: 0;
+  .card {
+    width: 100%;
+    max-width: 300px;
   }
+}
 
 /* Estilo dos botoes de contato */
-  .txt-contato, .icons-contato{
+@media (max-width: 768px) {
+  .txt-contato,
+  .icons-contato {
     display: block;
     width: 100%;
+    text-align: center;
+    margin: 0 auto;
   }
-  
-  .contato .txt-contato h3{
+
+  .contato .icons-contato button {
+    width: 80%;
+    padding: 0 30px;
+  }
+
+  .contato .txt-contato h3 {
     font-size: 2rem;
     line-height: 40px;
   }
-  
-  .contato .txt-contato p{
-    margin-bottom: 20px;
-  }
+}
 
-  .contato .icons-contato button{
+@media (max-width: 480px) {
+  .contato .icons-contato button {
     width: 100%;
+    font-size: 14px;
+    padding: 0 20px;
   }
 
-  /* Estilo da pag para solicitar orçamento */
-  .hoteis h3{
-    font-size: 2.3rem;
+  .contato .txt-contato h3 {
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
+}
+
+/* Estilo da pag para solicitar orçamento */
+@media (max-width: 768px) {
+  section.hoteis {
+    height: auto;
+    padding: 80px 20px;
+    background-attachment: scroll; /* Para evitar bugs no mobile */
+  }
+
+  .hoteis > .interface {
+    padding: 0 10px;
+  }
+
+  .hoteis h3 {
+    font-size: 2rem;
     line-height: 40px;
   }
 
-  .hoteis p{
-    margin: 20px 0;
+  .hoteis p {
     font-size: 16px;
-    font-weight: 300;
+    line-height: 24px;
   }
 
-  /* Estilo da part nosso serviço */
-  .txt-funciona, .instrucoes{
+  .hoteis button {
+    width: 180px;
+    height: 50px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hoteis h3 {
+    font-size: 1.6rem;
+    line-height: 30px;
+  }
+
+  .hoteis p {
+    font-size: 14px;
+  }
+
+  .hoteis button {
+    width: 160px;
+    height: 45px;
+    font-size: 14px;
+  }
+}
+
+/* Estilo da part nosso serviço */
+@media (max-width: 768px) {
+  .txt-funciona,
+  .instrucoes {
     display: block;
     width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
   }
 
-  .como-funciona .txt-funciona{
+  .como-funciona .txt-funciona {
     position: static;
+    text-align: center;
+    padding-bottom: 20px;
   }
 
-  .como-funciona .txt-funciona h3{
-    font-size: 3em;
-    line-height: 50px;
+  .como-funciona .txt-funciona h3 {
+    font-size: 2.2rem;
+    line-height: 40px;
   }
 
-  .instrucoes .instru-box{
+  .instrucoes .instru-box {
     flex-direction: column;
     text-align: center;
   }
 
-  /* Rodapé */
-  footer .middle-footer a{
-    margin:  15px 0;
-    display: block;
+  .instrucoes .instru-box img {
+    max-width: 100px;
   }
 
-  footer .bottom-footer p{
-    font-size: 14px;
+  .instrucoes .instru-box h4 {
+    font-size: 1.2rem;
   }
-
 }
 
-@media screen and (max-width: 500px) {
-  /* Exibe o botão do menu mobile */
-  header .btn-menu-mob {
-    display: block;
-    cursor: pointer;
-    position: absolute;
-    right: 20px; /* Posiciona no canto direito */
-    top: 20px; /* Ajusta para não ficar colado na borda */
-    z-index: 1000;
+@media (max-width: 480px) {
+  .como-funciona .txt-funciona h3 {
+    font-size: 1.8rem;
+    line-height: 30px;
   }
 
-  /* Certifica-se de que o menu está visível ao ser aberto */
-  header .menu-mobile {
-    width: 0;
-    height: 0;
-    background-color: #c9d4e2;
-    position: fixed;
-    top: 0;
-    right: 0;
-    display: flex;
+  .instrucoes .instru-box {
+    padding: 15px;
+  }
+
+  .instrucoes .instru-box img {
+    max-width: 80px;
+  }
+}
+
+/* Foto com img parte final */
+@media (max-width: 768px) {
+  .disteiner {
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
-    overflow: hidden;
-    transition: 0.5s;
-    z-index: 999;
+    padding: 30px 20px;
   }
 
-  /* Ajusta o menu quando ele estiver ativo */
-  header .menu-mobile.abrir {
-    width: 100%;
-    height: 100vh;
+  .txt-img h1 {
+    font-size: 24px;
   }
 
-  /* Certifica-se de que os links do menu estão visíveis */
-  header .menu-mobile nav ul {
-    list-style: none;
-    padding: 0;
+  .txt-img p {
+    font-size: 16px;
   }
 
-  header .menu-mobile nav ul li {
+  .image-section {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .txt-img h1 {
+    font-size: 20px;
+  }
+
+  .txt-img p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .image-section img {
+    max-width: 90%;
+  }
+}
+
+/* Rodapé */
+@media (max-width: 768px) {
+  footer .middle-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
     margin: 15px 0;
   }
 
-  header .menu-mobile nav ul li a {
-    font-size: 22px;
-    color: #000;
-    text-decoration: none;
+  footer .middle-footer a {
+    margin: 0 10px;
+    font-size: 16px;
+    white-space: nowrap;
   }
+
+  footer .top-footer button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    margin: 5px;
+  }
+
+  footer .bottom-footer p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 20px 0;
+  }
+
+  footer .middle-footer {
+    gap: 8px;
+  }
+
+  footer .middle-footer a {
+    font-size: 14px;
+  }
+
+  footer .top-footer button {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  footer .bottom-footer p {
+    font-size: 12px;
+  }
+}
+
+/* Esconder menu desktop no mobile */
+@media (max-width: 768px) {
+  .menu-desktop,
+  .btn-contato {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
+
+/* Botão hambúrguer */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.menu-toggle span {
+  height: 3px;
+  background: #fff;
+  border-radius: 3px;
+  transition: 0.4s ease;
+}
+
+/* Menu mobile */
+.nav-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.4s ease;
+  z-index: 1000;
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-menu ul li {
+  margin: 20px 0;
+}
+
+.nav-menu ul li a {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+/* Animação para transformar os 3 risquinhos em X */
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Mostrar menu mobile */
+.nav-menu.active {
+  right: 0;
 }
