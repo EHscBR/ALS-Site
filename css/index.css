@@ -464,8 +464,9 @@ section.como-funciona{
   margin-bottom: 20px;
 }
 
-.txt-img span {
+.txt-img h1 span {
   color: #007bff; /* destaque */
+   font-weight: 200;
 }
 
 .txt-img p {
