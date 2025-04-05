@@ -1,0 +1,174 @@
+@media screen and (max-width: 900px){
+  header .menu-desktop, header .btn-contato{
+    display: none;
+  } 
+}
+
+@media screen and (max-width: 878px){
+  /* Respioncivo da Hero */
+  .hero-site .txt-hero h1{
+    font-size: 2.6em;
+    line-height: 45px;
+   }
+   
+   .hero-site .txt-hero p{
+     font-size: 14px;
+   }
+   
+   .hero-site .txt-hero p span{
+     display: inline;
+   }
+   
+   .hero-site button{
+     font-size: 18px;
+   }
+
+   /*imagem com texto*/
+    .about-container {
+      flex-direction: column-reverse;
+      text-align: center;
+  }
+
+  .about-image {
+      width: 80%;
+  }
+
+  .about-text {
+      width: 100%;
+  }
+
+/* Responcivo porque nos escolher */
+  
+  .vantagens .itens-container{
+    flex-direction: column;
+  }
+
+  .vantagens .itens-container .img-itens img{
+   width: 100%;
+  }
+
+  .vantagens .itens-container .txt-itens p{
+    margin-bottom: 20px;
+  }
+
+  .vantagens .itens-container .txt-itens .item-1{
+    order: 1;
+  }
+
+  .vantagens .itens-container .txt-itens .item-2{
+    order: 0;
+  }
+
+/* Estilo dos botoes de contato */
+  .txt-contato, .icons-contato{
+    display: block;
+    width: 100%;
+  }
+  
+  .contato .txt-contato h3{
+    font-size: 2rem;
+    line-height: 40px;
+  }
+  
+  .contato .txt-contato p{
+    margin-bottom: 20px;
+  }
+
+  .contato .icons-contato button{
+    width: 100%;
+  }
+
+  /* Estilo da pag para solicitar orçamento */
+  .hoteis h3{
+    font-size: 2.3rem;
+    line-height: 40px;
+  }
+
+  .hoteis p{
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  /* Estilo da part nosso serviço */
+  .txt-funciona, .instrucoes{
+    display: block;
+    width: 100%;
+  }
+
+  .como-funciona .txt-funciona{
+    position: static;
+  }
+
+  .como-funciona .txt-funciona h3{
+    font-size: 3em;
+    line-height: 50px;
+  }
+
+  .instrucoes .instru-box{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Rodapé */
+  footer .middle-footer a{
+    margin:  15px 0;
+    display: block;
+  }
+
+  footer .bottom-footer p{
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  /* Exibe o botão do menu mobile */
+  header .btn-menu-mob {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 20px; /* Posiciona no canto direito */
+    top: 20px; /* Ajusta para não ficar colado na borda */
+    z-index: 1000;
+  }
+
+  /* Certifica-se de que o menu está visível ao ser aberto */
+  header .menu-mobile {
+    width: 0;
+    height: 0;
+    background-color: #c9d4e2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 999;
+  }
+
+  /* Ajusta o menu quando ele estiver ativo */
+  header .menu-mobile.abrir {
+    width: 100%;
+    height: 100vh;
+  }
+
+  /* Certifica-se de que os links do menu estão visíveis */
+  header .menu-mobile nav ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  header .menu-mobile nav ul li {
+    margin: 15px 0;
+  }
+
+  header .menu-mobile nav ul li a {
+    font-size: 22px;
+    color: #000;
+    text-decoration: none;
+  }
+}
